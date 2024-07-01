@@ -312,7 +312,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center p-24 gap-2">
       <div className="font-bold font-mono">MARKER FLIP TOURNEY SEASON #2</div>
       <div className="">
-        <Image src="/tourney-pic.png" alt="tournament" width={50} height={50} />
+        <Image src="/tourney-gen/tourney-pic.png" alt="tournament" width={50} height={50} />
       </div>
       <div className="flex flex-row gap-5 mt-5">
         <div className="flex flex-col items-center">
@@ -337,13 +337,13 @@ export default function Home() {
         </div>
       </div>
       {showGenerateButton && (
-        <button className="font-mono font-bold mt-16 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+        <button className="font-mono font-bold mt-8 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
           onClick={generateRound}>
           GENERATE ROUND
         </button>
       )}
       {showCopyButton && (
-        <button className="font-mono font-bold mt-16 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+        <button className="font-mono font-bold mt-8 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
           onClick={copyToClipboard}>
           COPY MESSAGE
         </button>
